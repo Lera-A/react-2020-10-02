@@ -49,10 +49,11 @@ const Product = ({ product, amount, increment, decrement, fetchData }) => {
 
 Product.propTypes = {
   product: PropTypes.shape({
-    ingredients: PropTypes.array.isRequired,
+    ingredients: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
     name: PropTypes.string,
     price: PropTypes.number,
   }).isRequired,
+  fetchData: PropTypes.func,
   amount: PropTypes.number,
   decrement: PropTypes.func,
   increment: PropTypes.func,

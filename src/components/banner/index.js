@@ -17,8 +17,9 @@ const Banner = ({ img = DefaultBanner, heading, description, children }) => (
 );
 
 Banner.propTypes = {
-  heading: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired,
+  img: PropTypes.string,
+  heading: PropTypes.string,
+  children: PropTypes.element,
   description: PropTypes.string,
 };
 
