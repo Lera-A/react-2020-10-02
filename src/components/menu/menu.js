@@ -29,7 +29,7 @@ class Menu extends React.Component {
     return (
       <div className={styles.menu}>
         <div>
-          {menu.map((product, i) => (
+          {menu.map((product) => (
             <Product key={product.id} product={product} />
           ))}
         </div>
